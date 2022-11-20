@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="beffr">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/beffr.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
