@@ -22,7 +22,6 @@ import java.util.stream.Collectors;
 @Slf4j
 public class BackendServiceAggregatorShipments extends BackendServiceAggregator<ShipmentsDTO> {
     private final ShipmentsDTO shipmentsDTO = new ShipmentsDTO();
-    ;
 
     public BackendServiceAggregatorShipments(final BackendServicesClient client,
                                              final AggregationConfigProperties properties) {

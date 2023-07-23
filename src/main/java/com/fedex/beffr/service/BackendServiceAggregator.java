@@ -14,10 +14,8 @@ public abstract class BackendServiceAggregator<T> {
     protected final BackendServicesClient client;
     protected final Object lockObject = new Object();
     protected final long queueLimit;
-
-    protected long counter = System.currentTimeMillis();
-
     protected final long timerLimit;
+    protected long counter = System.currentTimeMillis();
 
     public BackendServiceAggregator(final BackendServicesClient client,
                                     final AggregationConfigProperties properties) {

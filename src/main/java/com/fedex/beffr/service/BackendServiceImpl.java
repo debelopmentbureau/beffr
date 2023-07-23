@@ -4,8 +4,8 @@ import com.fedex.beffr.dto.AggregateDTO;
 import com.fedex.beffr.dto.PricingDTO;
 import com.fedex.beffr.dto.ShipmentsDTO;
 import com.fedex.beffr.dto.TrackDTO;
-import com.fedex.beffr.exception.ServerException;
 import com.fedex.beffr.exception.BadRequestException;
+import com.fedex.beffr.exception.ServerException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
@@ -13,7 +13,7 @@ import org.springframework.util.CollectionUtils;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static java.util.Optional.*;
+import static java.util.Optional.ofNullable;
 
 @Slf4j
 @Service

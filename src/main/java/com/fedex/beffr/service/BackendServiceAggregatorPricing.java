@@ -22,7 +22,6 @@ import java.util.stream.Collectors;
 @EnableConfigurationProperties(AggregationConfigProperties.class)
 public class BackendServiceAggregatorPricing extends BackendServiceAggregator<PricingDTO> {
     private final PricingDTO pricingDTO = new PricingDTO();
-    ;
 
     public BackendServiceAggregatorPricing(final BackendServicesClient client,
                                            final AggregationConfigProperties properties) {

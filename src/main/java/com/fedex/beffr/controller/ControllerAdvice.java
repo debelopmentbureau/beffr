@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public class ControllerAdvice {
     @ExceptionHandler(BadRequestException.class)
     protected ResponseEntity<ResponseError> handleBadRequestException(BadRequestException exception) {
-       return new ResponseEntity<>(ResponseError.builder().message(exception.getMessage()).build(),HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(ResponseError.builder().message(exception.getMessage()).build(), HttpStatus.BAD_REQUEST);
     }
 
     @ExceptionHandler(ServerException.class)
     protected ResponseEntity<ResponseError> handleServerException(ServerException exception) {
-        return new ResponseEntity<>(ResponseError.builder().message(exception.getMessage()).build(),HttpStatus.INTERNAL_SERVER_ERROR);
+        return new ResponseEntity<>(ResponseError.builder().message(exception.getMessage()).build(), HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }
